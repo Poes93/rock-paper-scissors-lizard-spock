@@ -11,7 +11,7 @@
 <body>
     <!--Game Section-->
     <div id="start-screen">
-        <div>
+        <div id="start-screen-background">
             <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
             <img src="assets/images/game_background.jpg" alt="Rock, Paper, Scissors, Lizard, Spock background img">
             <button onclick="startGame()">Start Game</button>
@@ -27,14 +27,12 @@
             <img src="assets/images/lizard.png" alt="Click Me" onclick="game('lizard')"></button>
             <img src="assets/images/spock.png" alt="Click Me" onclick="game('spock')"></button>
         </div>
-
-
-
-
-
+        <p id="message">Choose an option to play!</p>
+        <div id="message"></div>
+        <div id="score">Player: 0 - Computer: 0</div>
 </body>
 
-<script src="assets/css/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 
 
 </html>
