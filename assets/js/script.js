@@ -89,7 +89,7 @@ function toggleGame() {
         gameContent.style.display = 'block';
     }
 }
-
+// Toggles between the game rules and the game content
 function toggleGame() {
     const gameRules = document.getElementById('game-rules');
     const gameContent = document.getElementById('game-content');

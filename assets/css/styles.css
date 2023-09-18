@@ -76,19 +76,6 @@ footer {
     padding: 10px 0;
     border-radius: 4px;
     margin: 10px 0;
-    /* spacing */
-}
-
-footer p {
-    margin: 0;
-    /* remove default paragraph margins */
-    font-size: 0.9rem;
-    /* slightly smaller font size */
-}
-
-header h2 {
-    margin: 0;
-    /* remove default h2 margins */
 }
 
 /* Dark mode adjustments */
@@ -115,16 +102,12 @@ button:hover {
     background-color: #6666bb;
 }
 
-button:active {
-    transform: scale(0.98);
-}
-
 #start-screen button {
     background-color: #aa5555;
 }
 
 #start-screen button:hover {
-    background-color: #bb6666;
+    background-color: #6666bb;
 }
 
 #footer-bar {
@@ -136,27 +119,58 @@ button:active {
 }
 
 #header-bar {
-
     display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 80%;
+    padding: 100 auto;
 }
 
 .content-wrapper {
-    padding-top: 50px;
-    /* assuming the header height is 60px */
+    padding-top: 80px;
 }
 
 /* styles for mobile phones in portrait mode */
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .container, header, footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #footer-bar, #header-bar {
+        width: 100%;
+        flex-direction: column;
+    }
+}
 
 
 /* styles for tablets in portrait mode */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #footer-bar, #header-bar {
+        width: 90%;
+    }
+}
 
 
 /* styles for desktops and laptops */
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    header, footer {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #footer-bar, #header-bar {
+        justify-content: space-between;
+    }
+}
