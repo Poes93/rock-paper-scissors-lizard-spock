@@ -68,3 +68,43 @@ function darkmode() { //from W3School for darkmode
     var element = document.body;
     element.classList.toggle("dark-mode");
 }
+
+
+
+/**
+ * Toogles between the game rules and the game content
+ * 
+ */
+function toggleGame() {
+    const gameRules = document.getElementById('game-rules');
+    const gameContent = document.getElementById('game-content');
+    
+    if (gameRules.style.display === 'none' || !gameRules.style.display) {
+        // if game rules are not displayed, show them and hide the game content
+        gameRules.style.display = 'block';
+        gameContent.style.display = 'none';
+    } else {
+        // if game rules are displayed, hide them and show the game content
+        gameRules.style.display = 'none';
+        gameContent.style.display = 'block';
+    }
+}
+
+function toggleGame() {
+    const gameRules = document.getElementById('game-rules');
+    const gameContent = document.getElementById('game-content');
+    
+    if (gameRules.style.display === 'none' || !gameRules.style.display) {
+        // if game rules are not displayed, show them and hide the game content
+        gameRules.style.display = 'block';
+        gameContent.style.display = 'none';
+    } else {
+        // if game rules are displayed, hide them and show the game content
+        gameRules.style.display = 'none';
+        gameContent.style.display = 'block';
+    }
+    
+    // Display or hide the header and footer based on the game content
+    document.querySelector('header').style.display = gameContent.style.display;
+    document.querySelector('footer').style.display = gameContent.style.display;
+}

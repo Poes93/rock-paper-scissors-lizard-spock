@@ -9,35 +9,67 @@
 </head>
 
 <body>
-    
-    <!--Game Section-->
+
+
+    <!--Start Section-->
     <div id="start-screen">
-        <div id="start-screen-background">
+        <div class="container">
+            <img src="assets/images/game_background.jpg" id="start-image" alt="Start Screen Image">
             <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
-            
             <button onclick="startGame()">Start Game</button>
         </div>
     </div>
-
-    <div class="container">
-        <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-        <div class="choices">
-            <img src="assets/images/rock.png" alt="Click Me" onclick="game('rock')"></button>
-            <img src="assets/images/paper.png" alt="Click Me" onclick="game('paper')"></button>
-            <img src="assets/images/scissors.png" alt="Click Me" onclick="game('scissors')"></button>
-            <img src="assets/images/lizard.png" alt="Click Me" onclick="game('lizard')"></button>
-            <img src="assets/images/spock.png" alt="Click Me" onclick="game('spock')"></button>
-        </div>
-        <p id="message">Choose an option to play!</p>
-        <div id="message"></div>
-        <div id="score">Player: 0 - Computer: 0</div>
-
-        <!--Dark mode switch -->
-        <button onclick="darkmode()">Toggle dark mode</button>
+    <!--Rule Section-->
+    <div id="game-rules" class="container">
+        <h1>Rock Paper Scissors Lizard Spock Rules</h1>
+        <ul>
+            <li><strong>Rock</strong> crushes <strong>Scissors</strong></li>
+            <li><strong>Scissors</strong> cuts <strong>Paper</strong></li>
+            <li><strong>Paper</strong> covers <strong>Rock</strong></li>
+            <li><strong>Rock</strong> crushes <strong>Lizard</strong></li>
+            <li><strong>Lizard</strong> poisons <strong>Spock</strong></li>
+            <li><strong>Spock</strong> smashes <strong>Scissors</strong></li>
+            <li><strong>Scissors</strong> decapitates <strong>Lizard</strong></li>
+            <li><strong>Lizard</strong> eats <strong>Paper</strong></li>
+            <li><strong>Paper</strong> disproves <strong>Spock</strong></li>
+            <li><strong>Spock</strong> vaporizes <strong>Rock</strong></li>
+        </ul>
+        <button onclick="toggleGame()">Play Game</button>
     </div>
+
+    <!--Game Section-->
+    <header id="header-bar">
+        <h1> Rock, Paper, Scissors, Lizard, Spock!</h1>
+    </header>
+        <div id="game-content" class="container" style="display: none;">
+            <h1></h1>
+            <div class="choices">
+                <img src="assets/images/rock.png" alt="Click Me" onclick="game('rock')">
+                <img src="assets/images/paper.png" alt="Click Me" onclick="game('paper')">
+                <img src="assets/images/scissors.png" alt="Click Me" onclick="game('scissors')">
+                <img src="assets/images/lizard.png" alt="Click Me" onclick="game('lizard')">
+                <img src="assets/images/spock.png" alt="Click Me" onclick="game('spock')">
+            </div>
+            <p id="message">Choose an option to play!</p>
+
+            <div id="score">Player: 0 - Computer: 0</div>
+
+            <!--Dark mode switch -->
+            <button onclick="darkmode()">Dark Mode</button>
+            <br>
+            <!--Show rules switch-->
+            <button onclick="toggleGame()">Show Rules</button>
+        </div>
+    <footer id="footer-bar">
+        <p>&copy; 2023 - Follow me on gith<a href="https://github.com/poes93" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> 
+        </a> </p>
+    </footer>
+
+    <!--Scripts-->
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/46a90e5cb3.js" crossorigin="anonymous"></script>
+
 </body>
-
-<script src="assets/js/script.js"></script>
-
 
 </html>
