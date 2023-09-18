@@ -9,7 +9,6 @@ function game(playerChoice) {
     const computerChoice = choices[Math.floor(Math.random() * 5)];
     const result = checkWinner(playerChoice, computerChoice);
 
-    updateScores(result);
 }
 
 /**
@@ -20,7 +19,21 @@ function displayResult(playerChoice, computerChoice, result) {
     message.textContent = `You chose ${playerChoice}. Computer chose ${computerChoice}. You ${result}!`;
 }
 
+/**
+ * Displays the choice made by the user and computer and shows who won 
+ */
+function displayResult(playerChoice, computerChoice, result) {
+    const message = document.getElementById('message');
+    message.textContent = `You chose ${playerChoice}. Computer chose ${computerChoice}. You ${result}!`;
+}
 
+/**
+ * Finds the score of wins for both the player and computer 
+ */
+function displayScores() {
+    const scoreMessage = document.getElementById('score');
+    scoreMessage.textContent = `Player: ${playerScore} - Computer: ${computerScore}`;
+}
 
 /**
  * Start screen

@@ -5,3 +5,23 @@ body {
     align-items: center;
     background-color: #9190c1;
 }
+
+/* Game box */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #996e6e;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px #888888;
+}
+
+/* Game buttons */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #007bff96;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
