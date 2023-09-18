@@ -61,3 +61,10 @@ function startGame() {
     startScreen.style.display = 'none';
 }
 
+/**
+ *  Darkmode
+ */
+function darkmode() { //from W3School for darkmode
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
