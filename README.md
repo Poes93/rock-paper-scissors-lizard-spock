@@ -133,10 +133,8 @@ For a preview of the website on different screens
 
 ### Future Implementations
 
-  * Times and schedules
-  * Better allignment of the navbar to title text
-  * Better allignemnt of the text sections 
-  * Style the form section to better match the rest of the website 
+  * ´Better display when the text in green (won) or red (lost) and also orange for draw. 
+  * Global scoreboard?
 
 ### Accessibility
 
@@ -164,18 +162,31 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 Visual Studio Code - IDE
 
+GitHub CoPilot - Helping me with the code 
+
 Am I responsive? - To show the image on different devices
+
+PngEgg - Button images
+
+Gencraft - AI generated background image 
+
+Google - To resolve issues and find ideas
+
+w3 School - for getting new ideas and understanding
+
+Youtube - for getting new ideas and understanding
+
 
 ## Deployment & Local Development
 
 ### Deployment
 
-The site is deployed using GitHub Pages - Mountain-Biking-Webpage.
+The site is deployed using GitHub Pages - rock-paper-scissors-lizzard-spock.
 
 To Deploy the site using GitHub Pages:
 
 Login (or signup) to Github.
-Go to the repository for this project, Poes93/Mountain-Biking-Webpage.
+Go to the repository for this project, Poes93/rock-paper-scissors-lizzard-spock.
 Click the settings button.
 Select pages in the left hand navigation menu.
 From the source dropdown select main branch and press save.
@@ -187,7 +198,7 @@ The site has now been deployed, please note that this process may take a few min
 To fork the repository:
 
 Log in (or sign up) to Github.
-Go to the repository for this project, Poes93/Mountain-Biking-Webpage
+Go to the repository for this project, Poes93/rock-paper-scissors-lizzard-spock
 Click the Fork button in the top right corner.
 
 #### How to Clone
@@ -195,7 +206,7 @@ Click the Fork button in the top right corner.
 To clone the repository:
 
 Log in (or sign up) to GitHub.
-Go to the repository for this project, Poes93/Mountain-Biking-Webpage
+Go to the repository for this project, Poes93/rock-paper-scissors-lizzard-spock
 Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
@@ -214,46 +225,42 @@ Type 'git clone' into the terminal and then paste the link you copied in step 3.
 
 
 W3C Validator
-![HTML](documentation/html_validator.png)
+![HTML](documentation/images/html_validator.png)
 
-![CSS](documentation/css_validator.png)
+![CSS](documentation/images/css_validator.png)
 
-![Lighthouse Computer](documentation/lighthouse_computer.png)
+![Lighthouse Computer](documentation/images/lighthouse_laptop.png)
 
-![Lighthouse Mobile](documentation/lighthouse_mobile.png)
+![Lighthouse Mobile](documentation/images/lighthouse_mobile.png)
 
 ### Bugs
 
 These are the current bugs on the website. I can't seem to find out how to currently solve them. I think these issues is due to the Nav/header bar with the scaling of the elements.
 
-* When opening the page on mobile the nav menu is already open and to close it one need to press the bars to close the menu. Same when pressing the links, the menu wont disapear automatically. 
+* The start game page is not in the center of the picture but a bit to the top of the screen
 
-* Scaling for Hero image and position may differ on webrowser but also needs more adjustment on phone.
+* In dark mode the header text disapears
 
-* Header text wont adjust evenly when on different screen sizes.
+* The footer is not the same size as the header 
 
-* When pressing the links as the header is always on top and the links goes to the section header, it will be hidden under the header.
+* The reset score dosen't reset the score but refereshes the page, which in one way does reset the score.
 
-* Some issues with scaling the nav bar that it sometimes disapears. Reload the page will solve that issue for now.
 
 
 ## Credits
 
 ### Code Used
-I've used parts of Love Running project for the nav menu and media querries.
+For the reset button (refresh screen) [stackoverflow](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click)
+[w3school](https://www.w3schools.com)
 
 ### Content
 
 ###  Media
-The picture I have taken from Pexels.com.
-* [Hero image taken by Jahangeer Bm](https://www.pexels.com/photo/silhouette-photography-of-biker-on-top-of-hill-1619299/)
-* [About image by Pixabay](https://www.pexels.com/photo/bicyclist-passing-the-road-near-the-river-163407/)
-* [Gear image by Irene Lasus](https://www.pexels.com/photo/man-in-black-and-orange-bicycle-riding-jacket-with-green-off-road-bike-90454/)
-* [The contact image is taken by Darcy Lawrey](https://www.pexels.com/photo/man-in-white-and-green-raglan-elbow-sleeved-shirt-biking-at-daytime-733743/)
-* [The trails image is taken by James Wheeler](https://www.pexels.com/photo/photo-of-pathway-surrounded-by-fir-trees-1578750/)
+
 
 ###  Acknowledgments
 
-Thank you Carolina Leguizamon for the help during this project and also to my mentor Jubril Akolade
+Thank you Carolina Leguizamon for the help during and support and for the stress
+Daisy McGill for being a supportive mentor 
 
 
