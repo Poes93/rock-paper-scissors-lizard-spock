@@ -127,10 +127,6 @@ button:hover {
     background-color: #6666bb;
 }
 
-#start-screen {
-    display: block;
-}
-
 #game-content, #game-rules {
     display: none;
 }
