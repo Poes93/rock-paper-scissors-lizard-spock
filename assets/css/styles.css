@@ -149,14 +149,12 @@ button:hover {
     }
 }
 
-
 /* styles for tablets in portrait mode */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     #footer-bar, #header-bar {
         width: 90%;
     }
 }
-
 
 /* styles for desktops and laptops */
 @media only screen and (min-width: 1280px) {
