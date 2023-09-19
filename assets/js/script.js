@@ -2,6 +2,61 @@
 let playerScore = 0;
 let computerScore = 0;
 
+
+//Event listener for the view switches
+document.addEventListener('DOMContentLoaded', (event) => {
+    const startScreen = document.getElementById('start-screen');
+    const gameContent = document.getElementById('game-content');
+    const gameRules = document.getElementById('game-rules');
+    
+    // Start the game by hiding start screen and showing the game content.
+    const startGameBtn = document.querySelector('#start-screen button');
+    startGameBtn.addEventListener('click', function() {
+        startScreen.style.display = 'none';
+        gameContent.style.display = 'block';
+        gameRules.style.display = 'none'; // Ensure that rules are hidden when game starts
+    });
+    
+    // Toggle between game content and game rules.
+    const toggleGameBtn = document.querySelector('#game-content button:last-child');
+    toggleGameBtn.addEventListener('click', function() {
+        gameRules.style.display = 'block';
+        gameContent.style.display = 'none';
+    });
+
+    const backToGameBtn = document.querySelector('#game-rules button');
+    backToGameBtn.addEventListener('click', function() {
+        gameRules.style.display = 'none';
+        gameContent.style.display = 'block';
+    });
+});
+
+
+const choiceRock = document.getElementById('choiceRock');
+const choicePaper = document.getElementById('choicePaper');
+const choiceScissors = document.getElementById('choiceScissors');
+const choiceLizard = document.getElementById('choiceLizard');
+const choiceSpock = document.getElementById('choiceSpock');
+
+choiceRock.addEventListener('click', function() {
+    game('rock');
+});
+choicePaper.addEventListener('click', function() {
+    game('paper');
+});
+choiceScissors.addEventListener('click', function() {
+    game('scissors');
+});
+choiceLizard.addEventListener('click', function() {
+    game('lizard');
+});
+choiceSpock.addEventListener('click', function() {
+    game('spock');
+});
+
+
+
+
 /**
  * The different choices for the game 
  */
@@ -53,38 +108,11 @@ function updateScores(result) {
     }
 }
 
-/**
- * Start screen
- */
-function startGame() {
-    const startScreen = document.getElementById('start-screen');
-    startScreen.style.display = 'none';
-}
-
-/**
- *  Darkmode
- */
+/* Darkmode*/
 function darkmode() { //from W3School for darkmode
     var element = document.body;
     element.classList.toggle("dark-mode");
 }
 
-// Toggles between the game rules and the game content
-function toggleGame() {
-    const gameRules = document.getElementById('game-rules');
-    const gameContent = document.getElementById('game-content');
-    
-    if (gameRules.style.display === 'none') {
-        // if game rules are not displayed, show them and hide the game content
-        gameRules.style.display = 'block';
-        gameContent.style.display = 'none';
-    } else {
-        // if game rules are displayed, hide them and show the game content
-        gameRules.style.display = 'none';
-        gameContent.style.display = 'block';
-    }
-    
-    // Display or hide the header and footer based on the game content
-    document.querySelector('header').style.display = gameContent.style.display;
-    document.querySelector('footer').style.display = gameContent.style.display;
-}
+const darkModeBtn = document.getElementById('darkModeBtn');
+darkModeBtn.addEventListener('click', darkmode);

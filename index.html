@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,54 +15,59 @@
         <div class="container">
             <img src="assets/images/game_background.jpg" class="background-image" alt="background image playing game">
             <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
-            <button onclick="startGame()">Start Game</button>
+            <button id="startGameBtn">Start Game</button>
         </div>
     </div>
-    <!--Rule Section-->
-    <div id="game-rules" class="container">
-        <h1>Rock Paper Scissors Lizard Spock Rules</h1>
-        <img src="assets/images/game_background.jpg" class="background-image" alt="background image playing game">
-        <ul>
-            <li><strong>Rock</strong> crushes <strong>Scissors</strong></li>
-            <li><strong>Scissors</strong> cuts <strong>Paper</strong></li>
-            <li><strong>Paper</strong> covers <strong>Rock</strong></li>
-            <li><strong>Rock</strong> crushes <strong>Lizard</strong></li>
-            <li><strong>Lizard</strong> poisons <strong>Spock</strong></li>
-            <li><strong>Spock</strong> smashes <strong>Scissors</strong></li>
-            <li><strong>Scissors</strong> decapitates <strong>Lizard</strong></li>
-            <li><strong>Lizard</strong> eats <strong>Paper</strong></li>
-            <li><strong>Paper</strong> disproves <strong>Spock</strong></li>
-            <li><strong>Spock</strong> vaporizes <strong>Rock</strong></li>
-        </ul>
-        <button onclick="toggleGame()">Play Game</button>
-    </div>
-
-    <!--Game Section-->
+    
+    <!--Header Section-->
     <header id="header-bar">
         <h1> Rock, Paper, Scissors, Lizard, Spock!</h1>
         <img src="assets/images/game_background.jpg" class="background-image" alt="background image playing game">
     </header>
+
+    <!--Game Section-->
         <div id="game-content" class="container" style="display: none;">
             <h1></h1>
             <div class="choices">
-                <img src="assets/images/rock.png" alt="Click Me" onclick="game('rock')">
-                <img src="assets/images/paper.png" alt="Click Me" onclick="game('paper')">
-                <img src="assets/images/scissors.png" alt="Click Me" onclick="game('scissors')">
-                <img src="assets/images/lizard.png" alt="Click Me" onclick="game('lizard')">
-                <img src="assets/images/spock.png" alt="Click Me" onclick="game('spock')">
+                <img src="assets/images/rock.png" alt="Click Me" id="choiceRock">
+                <img src="assets/images/paper.png" alt="Click Me" id="choicePaper">
+                <img src="assets/images/scissors.png" alt="Click Me" id="choiceScissors">
+                <img src="assets/images/lizard.png" alt="Click Me" id="choiceLizard">
+                <img src="assets/images/spock.png" alt="Click Me" id="choiceSpock">
             </div>
             <p id="message">Choose an option to play!</p>
 
             <div id="score">Player: 0 - Computer: 0</div>
 
+            <!--Reset score button-->
             <button onClick="window.location.reload();">Reset Score</button>        
             <br>
             <!--Dark mode switch -->
-            <button onclick="darkmode()">Dark Mode</button>
+            <button id="darkModeBtn">Dark Mode</button>
             <br>
             <!--Show rules switch-->
-            <button onclick="toggleGame()">Show Rules</button>
+            <button id="showRulesBtn">Show Rules</button>
         </div>
+
+<!--Rule Section-->
+<div id="game-rules" class="container">
+    <h1>Rock Paper Scissors Lizard Spock Rules</h1>
+    <img src="assets/images/game_background.jpg" class="background-image" alt="background image playing game">
+    <ul>
+        <li><strong>Rock</strong> crushes <strong>Scissors</strong></li>
+        <li><strong>Scissors</strong> cuts <strong>Paper</strong></li>
+        <li><strong>Paper</strong> covers <strong>Rock</strong></li>
+        <li><strong>Rock</strong> crushes <strong>Lizard</strong></li>
+        <li><strong>Lizard</strong> poisons <strong>Spock</strong></li>
+        <li><strong>Spock</strong> smashes <strong>Scissors</strong></li>
+        <li><strong>Scissors</strong> decapitates <strong>Lizard</strong></li>
+        <li><strong>Lizard</strong> eats <strong>Paper</strong></li>
+        <li><strong>Paper</strong> disproves <strong>Spock</strong></li>
+        <li><strong>Spock</strong> vaporizes <strong>Rock</strong></li>
+    </ul>
+    <button id="toggleGameBtn">Back to Game</button>
+</div>
+
     <footer id="footer-bar">
         <p>&copy; 2023 - Follow me on github<a href="https://github.com/poes93" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i> 
