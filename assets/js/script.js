@@ -2,90 +2,78 @@
 let playerScore = 0;
 let computerScore = 0;
 
-
 //Event listener for the view switches
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', function () {
     const startScreen = document.getElementById('start-screen');
     const gameContent = document.getElementById('game-content');
     const gameRules = document.getElementById('game-rules');
-    
-    // Start the game by hiding start screen and showing the game content.
+
+    // Start the game by hiding start screen and showing the game .
     const startGameBtn = document.querySelector('#start-screen button');
-    startGameBtn.addEventListener('click', function() {
+    startGameBtn.addEventListener('click', function () {
         startScreen.style.display = 'none';
         gameContent.style.display = 'block';
-        gameRules.style.display = 'none'; // Ensure that rules are hidden when game starts
+        gameRules.style.display = 'none'; 
     });
-    
-    // Toggle between game content and game rules.
+
+    // Toggle between game and rules.
     const toggleGameBtn = document.querySelector('#game-content button:last-child');
-    toggleGameBtn.addEventListener('click', function() {
+    toggleGameBtn.addEventListener('click', function () {
         gameRules.style.display = 'block';
         gameContent.style.display = 'none';
     });
-
+    // Back to game from rules.
     const backToGameBtn = document.querySelector('#game-rules button');
-    backToGameBtn.addEventListener('click', function() {
+    backToGameBtn.addEventListener('click', function () {
         gameRules.style.display = 'none';
         gameContent.style.display = 'block';
     });
 });
 
-
+// event listener for the game choices 
 const choiceRock = document.getElementById('choiceRock');
 const choicePaper = document.getElementById('choicePaper');
 const choiceScissors = document.getElementById('choiceScissors');
 const choiceLizard = document.getElementById('choiceLizard');
 const choiceSpock = document.getElementById('choiceSpock');
 
-choiceRock.addEventListener('click', function() {
+choiceRock.addEventListener('click', function () {
     game('rock');
 });
-choicePaper.addEventListener('click', function() {
+choicePaper.addEventListener('click', function () {
     game('paper');
 });
-choiceScissors.addEventListener('click', function() {
+choiceScissors.addEventListener('click', function () {
     game('scissors');
 });
-choiceLizard.addEventListener('click', function() {
+choiceLizard.addEventListener('click', function () {
     game('lizard');
 });
-choiceSpock.addEventListener('click', function() {
+choiceSpock.addEventListener('click', function () {
     game('spock');
 });
 
-
-
-
-/**
- * The different choices for the game 
- */
+// The different choices for the game
 function game(playerChoice) {
     const choices = ["rock", "paper", "scissors", "lizard", "spock"];
-    const computerChoice = choices[Math.floor(Math.random() * 5)];
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
     const result = checkWinner(playerChoice, computerChoice);
 
     updateScores(result);
     displayScores();
     displayResult(playerChoice, computerChoice, result);
 }
-/**
- * Displays the choice made by the user and computer and shows who won 
- */
+/* Displays the choice made by the user and computer and shows who won */
 function displayResult(playerChoice, computerChoice, result) {
     const message = document.getElementById('message');
     message.textContent = `You chose ${playerChoice}. Computer chose ${computerChoice}. You ${result}!`;
 }
-/**
- * Finds the score of wins for both the player and computer 
- */
+/* Finds the score of wins for both the player and computer */
 function displayScores() {
     const scoreMessage = document.getElementById('score');
     scoreMessage.textContent = `Player: ${playerScore} - Computer: ${computerScore}`;
 }
-/**
- * Checks the rules of the game to see if the player won or lost 
- */
+/* Checks the rules of the game to see if the player won or lost */
 function checkWinner(player, computer) {
     if (player === computer) return "draw";
 
@@ -108,11 +96,10 @@ function updateScores(result) {
     }
 }
 
-/* Darkmode*/
-function darkmode() { //from W3School for darkmode
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-}
-
+// Darkmode
 const darkModeBtn = document.getElementById('darkModeBtn');
 darkModeBtn.addEventListener('click', darkmode);
+
+function darkmode() {
+    document.body.classList.toggle('dark-mode');
+}
