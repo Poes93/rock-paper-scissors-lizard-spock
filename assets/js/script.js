@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     startGameBtn.addEventListener('click', function () {
         startScreen.style.display = 'none';
         gameContent.style.display = 'block';
-        gameRules.style.display = 'none'; 
+        gameRules.style.display = 'none';
     });
 
     // Toggle between game and rules.
@@ -103,3 +103,12 @@ darkModeBtn.addEventListener('click', darkmode);
 function darkmode() {
     document.body.classList.toggle('dark-mode');
 }
+
+// Reset score
+let resetScore = () => {
+    playerScore = 0;
+    computerScore = 0;
+    displayScores();
+}
+
+document.getElementById('resetBtn').addEventListener('click', resetScore);

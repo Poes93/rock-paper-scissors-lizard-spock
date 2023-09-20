@@ -4,9 +4,9 @@ Welcome,
 
 This is my second project for Code Institute and i've been using HTML, CSS and JavaScript for the first time
 
-[Here is a live demo of the website](https://poes93.github.io/Mountain-Biking-Webpage/)
+[Here is a live demo of the website](https://poes93.github.io/rock-paper-scissors-lizzard-spock/)
 
-![amiresponsive](documentation/amiresposive.png)
+![amiresponsive](documentation/images/amiresponsive.png)
 
 ---
 
@@ -48,39 +48,27 @@ This is my second project for Code Institute and i've been using HTML, CSS and J
 
 ## User Experience (UX)
 
-### User Stories
-
 #### Why This Website Exists
 
 I made this website to provide users with an engaging and accessible experience while playing the Rock, Paper, Scissors, Lizard, Spock game. It also offers visual customization through theme selection and ensures users have a clear understanding of the game rules.
 
 #### User Stories 
-Starting the Game:
-User sees a start screen with title and button.
-Clicking "Start Game" opens game content.
 
-Choosing a Move:
-User sees Rock, Paper, Scissors, Lizard, Spock images for selection.
-User needs to pick an one.
-Clicking an image shows win, loss, or draw outcome.
+User Stories
 
-Viewing Score:
-Current score displayed.
-Option to reset score available.
+Starting the Game: User sees a start screen with title and button. Clicking "Start Game" opens game content.
 
-Theme Selection:
-Option for dark mode provided.
+Choosing a Move: User sees Rock, Paper, Scissors, Lizard, Spock images for selection. User needs to pick an one. Clicking an image shows win, loss, or draw outcome.
 
-Viewing Game Rules:
-Button to view game rules present.
-Option to return to game from rules.
+Viewing Score: Current score displayed. Option to reset score available.
 
-Footer & Links:
-Footer shows copyright and creator's GitHub link.
+Theme Selection: Option for dark mode provided.
 
-Accessibility:
-Alt text for all images ensured.
-Clear labels for all interactive items.
+Viewing Game Rules: Button to view game rules present. Option to return to game from rules.
+
+Footer & Links: Footer shows copyright and creator's GitHub link.
+
+Accessibility: Alt text for all images ensured. Clear labels for all interactive items.
 
 ## Design
 
@@ -120,21 +108,25 @@ I've used googles font Roboto as the main font with San-Serif as backup
 
 Choose among Rock, Paper, Scissors, Lizard, and Spock and learn the rules
 
-* 
+* In my footer there is a link to my Github to follow me
 
-* 
+* Rules for the game 
 
-* Link to my GitHub in the footer
+* A reset game function
+
+* A darkmode switch
+
+* And its responsive to work on different screen sizes
 
 ### General features on each page
 
 For a preview of the website on different screens
-[amiresponsive](https://ui.dev/amiresponsive?url=https://poes93.github.io/Mountain-Biking-Webpage/)
+[amiresponsive](https://ui.dev/amiresponsive?url=https://poes93.github.io/rock-paper-scissors-lizzard-spock/)
 
 ### Future Implementations
 
-  * ´Better display when the text in green (won) or red (lost) and also orange for draw. 
-  * Global scoreboard?
+  * Better displying when winning. The text should display in green (won) or red (lost) and also orange for draw. 
+  * Have different difficulties
 
 ### Accessibility
 
@@ -183,45 +175,56 @@ Youtube - for getting new ideas and understanding
 
 The site is deployed using GitHub Pages - rock-paper-scissors-lizzard-spock.
 
-To Deploy the site using GitHub Pages:
+*To Deploy the site using GitHub Pages:
 
-Login (or signup) to Github.
-Go to the repository for this project, Poes93/rock-paper-scissors-lizzard-spock.
-Click the settings button.
-Select pages in the left hand navigation menu.
-From the source dropdown select main branch and press save.
-The site has now been deployed, please note that this process may take a few minutes before the site goes live.
+*Login (or signup) to Github.
+*Go to the repository for this project, Poes93/rock-paper-scissors-lizzard-spock.
+*Click the settings button.
+*Select pages in the left hand navigation menu.
+*From the source dropdown select main branch and press save.
+*The site has now been deployed, please note that this process may take a few minutes before the site goes live.
+
 ### Local Development
 
 #### How to Fork
 
 To fork the repository:
 
-Log in (or sign up) to Github.
-Go to the repository for this project, Poes93/rock-paper-scissors-lizzard-spock
-Click the Fork button in the top right corner.
+*Log in (or sign up) to Github.
+*Go to the repository for this project, Poes93/rock-paper-scissors-lizzard-spock
+*Click the Fork button in the top right corner.
 
 #### How to Clone
 
 To clone the repository:
 
-Log in (or sign up) to GitHub.
-Go to the repository for this project, Poes93/rock-paper-scissors-lizzard-spock
-Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
-Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
-Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+*Log in (or sign up) to GitHub.
+*Go to the repository for this project, Poes93/rock-paper-scissors-lizzard-spock
+*Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+*Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+*Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 ## Testing
-
-## Testing 
 
 * Website was tested on the following browsers and with a Macbook Pro 14" 2021: Chrome, Safari and Brave.
 * For mobile it's been tested on a iPhone 13 Pro.
 * The website is responsive when using Google Devtools responsive screen adjuster.
-* The navigation and the sections Home, About, trails, gear, tips and contact works fine. Except that the user needs to scroll up a bit to get to the start of the section.
-* The form works: it requires entries in every field, only accepts an email in the email field, and the submit button works and the user will get a new window to confirm its been sent.
-* The text adapts in width to accommodate smaller o larger screens, always taking up the width available.
-* There are no broken links on the page
+* HTML Validator, CSS Validator and Wave for accessiblity 
+
+| Purpose                                              | Action                  | Expected                                            | Result |
+| ---------------------------------------------------- | ----------------------- | --------------------------------------------------- | ------ |
+| Start Button gets to the game                        | Click Start Game button | Come to game section                                | PASS   |
+| Choose Rock                                          | Click Rock img          | Getting a win, lose or draw result                  | PASS   |
+| Choose Paper                                         | Click Paper img         | Getting a win, lose or draw result                  | PASS   |
+| Choose Scissor                                       | Click Scissor img       | Getting a win, lose or draw result                  | PASS   |
+| Choose Lizard                                        | Click Lizard img        | Getting a win, lose or draw result                  | PASS   |
+| Choose Spock                                         | Click Spock img         | Getting a win, lose or draw result                  | PASS   |
+| Reset the game score                                 | Click Reset Score       | Current result sets to 0 for both computer and user | PASS   |
+| I want to change to dark mode                        | Click Dark Mode         | Website to change its color scheme                  | PASS   |
+| I want to change from dark mode                      | Click Dark Mode again   | Website to change its color scheme to standard      | PASS   |
+| I want to see the rules                              | Click Show Rules        | Come to rules section                               | PASS   |
+| I want to go back to the game while in rules section | Click Back to Game      | Come back to game section                           | PASS   |
+| Github link in the footer should link to my profile  | Click Github icon       | Come to Github profile //Poes93                     | PASS   |
 
 
 W3C Validator
@@ -237,30 +240,23 @@ W3C Validator
 
 These are the current bugs on the website. I can't seem to find out how to currently solve them. I think these issues is due to the Nav/header bar with the scaling of the elements.
 
-* The start game page is not in the center of the picture but a bit to the top of the screen
-
-* In dark mode the header text disapears
 
 * The footer is not the same size as the header 
 
-* The reset score dosen't reset the score but refereshes the page, which in one way does reset the score.
 
 
 
 ## Credits
 
 ### Code Used
-For the reset button (refresh screen) [stackoverflow](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click)
-[w3school](https://www.w3schools.com)
 
 ### Content
 
 ###  Media
 
-
 ###  Acknowledgments
 
 Thank you Carolina Leguizamon for the help during and support and for the stress
-Daisy McGill for being a supportive mentor 
+Daisy McGirr for being a supportive mentor 
 
 
