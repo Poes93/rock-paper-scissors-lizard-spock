@@ -54,8 +54,6 @@ I made this website to provide users with an engaging and accessible experience 
 
 #### User Stories 
 
-User Stories
-
 Starting the Game: User sees a start screen with title and button. Clicking "Start Game" opens game content.
 
 Choosing a Move: User sees Rock, Paper, Scissors, Lizard, Spock images for selection. User needs to pick an one. Clicking an image shows win, loss, or draw outcome.
@@ -108,15 +106,29 @@ I've used googles font Roboto as the main font with San-Serif as backup
 
 Choose among Rock, Paper, Scissors, Lizard, and Spock and learn the rules
 
+* I have a start page where the user can decide if user want to continue or not to the game
+
+[start page](documentation/images/start_game_feature.png)
+
+* When the user has decided to start the game there is options to play the game with the options Rock Paper Scissors Lizard Spock 
+
+[game feature](documentation/images/game_feature.png)
+
+* A reset score button has been added to the game to reset the score. When its going bad for the user
+
+* A dark mode toggle has been added to switch to dark mode and back to previously with the same button
+
+* A rules button has been added to the game section. The user can read the rules and with the same button go back to the game
+
+[user choices](documentation/images/user_choices.png)
+
+* The rules section explaining the rules easily to the user
+
+[rules](documentation/images/rules_feature.png)
+
 * In my footer there is a link to my Github to follow me
 
-* Rules for the game 
-
-* A reset game function
-
-* A darkmode switch
-
-* And its responsive to work on different screen sizes
+[Github link](documentation/images/footer_feature.png)
 
 ### General features on each page
 
